@@ -1,0 +1,11 @@
+<h1>Coaching#answer</h1>
+<p>Find me in app/views/coaching/answer.html.erb</p>
+<% if @your_message.include?("?") %>
+    <%= "Silly question, get dressed and go to work!" %>
+
+  <% elsif @your_message == "I am going to work right now!" %>
+    <%= "" %>
+
+  <% else %>
+    <%= "I don't care, get dressed and go to work!" %>
+  <% end %>
