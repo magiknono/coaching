@@ -1,5 +1,6 @@
 <h1>Coaching#answer</h1>
 <p>Find me in app/views/coaching/answer.html.erb</p>
+<h2><%= @your_message %> </h2>
 <% if @your_message.include?("?") %>
     <%= "Silly question, get dressed and go to work!" %>
 
@@ -9,3 +10,5 @@
   <% else %>
     <%= "I don't care, get dressed and go to work!" %>
   <% end %>
+
+<%= link_to "Add a new question", ask_path %>
